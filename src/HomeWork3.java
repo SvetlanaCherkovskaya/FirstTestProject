@@ -52,8 +52,7 @@ public class HomeWork3 {
     private static void makeTwoDimensionalArray() {
         int[][] nums = new int[5][5];
         for (int i = 0; i < 5; i++) {
-            int j;
-            for (j = 0; j < 5; j++) {
+            for (int j = 0; j < 5; j++) {
                 if (i == j) {
                     nums[i][j] = 1;
                 } else if (j == nums.length - 1 - i) {
