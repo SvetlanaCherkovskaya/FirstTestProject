@@ -17,14 +17,15 @@ public class Cats {
     }
 
     void eat (Plate plate){
-        plate.decreaseFood(appetite);
 
-        if (plate.getFood() >= 0) {
+        if (plate.getFood() >= appetite) {
+            plate.decreaseFood(appetite);
             satiety = true;
         }
         else {
             satiety = false;
         }
+
     }
 
     @Override
